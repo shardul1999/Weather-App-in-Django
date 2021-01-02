@@ -2,6 +2,6 @@
  
 Tools & Techniques: Web Scraping(bs4), html, css, python, django.
 
-![](Test/one.png)
-![](Test/two.png)
-![](Test/three.png)
+![](test/one.png)
+![](test/two.png)
+![](test/three.png)
