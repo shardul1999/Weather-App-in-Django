@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body style="background-image: url('https://cdn.wallpapersafari.com/19/55/jBIZ1m.jpg'); background-size: cover;">
+
+    <div  style="text-align: center; margin-top: 50px;">
+    <h1 style="color:rgb(0, 0, 0); font-size: 50px; ">
+        What's the weather?
+    </h1>
+    <form method="GET">
+        <label for="city"></label>
+        <input style="border: 2px solid black; font-size: 20px; width: 400px; padding: 10px;" type="text" name="city" id="city" placeholder="city....">
+        <br>
+        <input style="background-color: black; color: white; margin-top: 20px; border: 2px solid black; font-size: 20px; width: 200px; padding: 10px;" type="submit" value="Submit">
+    </form>
+    </div>
+    
+    
+    </div>
+    <div style="text-align: center; width: 500px;
+    border: 5px solid #000;
+    background-color: azure;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 31%;
+    font-size: 20px;">
+    {% if weather %}
+        <h3>{{ weather.region }}</h3>
+        <h3>{{ weather.daytime }}</h3>
+        <h3>{{ weather.status }}</h3>
+        <h3>Current Temperature: {{ weather.temp }} °C</h3>
+    
+    {% endif %}
+    </div>
+
+</body>
+</html>
